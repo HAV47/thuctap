@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'UI/now_playing_screen.dart';
 
 void main() => runApp(MyApp());
 
@@ -47,7 +48,7 @@ class HomeScreen extends StatelessWidget {
                   ],
                 ),
                 Container(
-                  height: 450,
+                  height: 360,
                   child: TabBarView(
                     children: [
                       Center(
@@ -62,9 +63,67 @@ class HomeScreen extends StatelessWidget {
                     ],
                   ),
                 ),
+                NowPlayingWidget(),
               ],
             ),
           ),
+        //   Container(
+        //     color: Colors.grey[200],
+        //     padding: EdgeInsets.all(5),
+        //     child: Column(
+        //       crossAxisAlignment: CrossAxisAlignment.center,
+        //       children: [
+        //         // Hình ảnh bìa album (để placeholder)
+        //         Container(
+        //           width: 50,
+        //           height: 50,
+        //           color: Colors.black,
+        //           child: Icon(Icons.album, size: 50, color: Colors.white),
+        //         ),
+        //         SizedBox(height: 5),
+        //         // Tiêu đề bài hát và nghệ sĩ
+        //         Text(
+        //           'Tên bài hát',
+        //           style: TextStyle(fontSize: 5, fontWeight: FontWeight.bold),
+        //         ),
+        //         Text(
+        //           'Tên nghệ sĩ',
+        //           style: TextStyle(fontSize: 5),
+        //         ),
+        //         SizedBox(height: 0.2),
+        //         Slider(
+        //           value: 0,
+        //           onChanged: (double value) {
+        //           },
+        //           min: 0,
+        //           max: 1,
+        //           divisions: 100,
+        //           label: 'Slider',
+        //         ),
+        //         SizedBox(height: 5),
+        //         Row(
+        //           mainAxisAlignment: MainAxisAlignment.center,
+        //           children: [
+        //             IconButton(
+        //               icon: Icon(Icons.skip_previous),
+        //               onPressed: () {
+        //               },
+        //             ),
+        //             IconButton(
+        //               icon: Icon(Icons.play_arrow),
+        //               onPressed: () {
+        //               },
+        //             ),
+        //             IconButton(
+        //               icon: Icon(Icons.skip_next),
+        //               onPressed: () {
+        //               },
+        //             ),
+        //           ],
+        //         ),
+        //       ],
+        //     ),
+        //   ),
         ],
       ),
     );
