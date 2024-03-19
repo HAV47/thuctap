@@ -44,11 +44,11 @@ class _NowPlayingWidgetState extends State<NowPlayingWidget> with SingleTickerPr
             ),
             ),
             SizedBox(height: 16),
-            Text(
+            const Text(
               'Tên bài hát',
               style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
             ),
-            Text(
+            const Text(
               'Tên nghệ sĩ',
               style: TextStyle(fontSize: 18),
             ),
