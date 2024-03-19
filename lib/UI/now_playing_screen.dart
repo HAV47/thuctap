@@ -29,21 +29,21 @@ class _NowPlayingWidgetState extends State<NowPlayingWidget> with SingleTickerPr
   Widget build(BuildContext context) {
     return Card(
       elevation: 4,
-      margin: EdgeInsets.all(10),
+      margin: EdgeInsets.all(5),
       child: Container(
-        padding: EdgeInsets.all(10),
+        padding: EdgeInsets.all(5),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             FadeTransition(
               opacity: _animation,
                 child: Image.asset('assets/images/1.jpg',
-                width: 20,
-                height: 20,
+                width: 30,
+                height: 30,
                 fit: BoxFit.cover,
             ),
             ),
-            SizedBox(height: 16),
+            SizedBox(height: 2),
             const Text(
               'Tên bài hát',
               style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
@@ -52,7 +52,7 @@ class _NowPlayingWidgetState extends State<NowPlayingWidget> with SingleTickerPr
               'Tên nghệ sĩ',
               style: TextStyle(fontSize: 18),
             ),
-            SizedBox(height: 16),
+            SizedBox(height: 2),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
