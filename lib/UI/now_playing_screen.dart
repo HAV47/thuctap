@@ -37,11 +37,7 @@ class _NowPlayingWidgetState extends State<NowPlayingWidget> with SingleTickerPr
           children: [
             FadeTransition(
               opacity: _animation,
-                child: Image.asset('assets/images/1.jpg',
-                width: 30,
-                height: 30,
-                fit: BoxFit.cover,
-            ),
+                child: Image.asset('assets/a1.jpg', width: 30, height: 30, fit: BoxFit.cover),
             ),
             SizedBox(height: 2),
             const Text(
