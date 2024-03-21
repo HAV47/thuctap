@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:havv/UI/album_screen.dart';
 import 'package:havv/ui/all_screen.dart';
+import 'package:havv/ui/artis_screen.dart';
 import 'UI/now_playing_screen.dart';
 
 void main() => runApp(MyApp());
@@ -73,7 +74,7 @@ class HomeScreen extends StatelessWidget {
                   ),
 
                   tabs: const [
-                    Tab(text: 'All'),
+                    Tab(text: 'All',),
                     Tab(text: 'Album'),
                     Tab(text: 'Playlist'),
                     Tab(text: 'Artis'),
@@ -90,6 +91,9 @@ class HomeScreen extends StatelessWidget {
                       const Center(
                         child: Text('Danh sách playlist'),
                       ),
+                      ArtistScreen(),
+                      Center(
+                        child :Text('Danh sách Explore'),)
                     ],
                   ),
                 ),

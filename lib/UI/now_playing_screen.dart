@@ -24,7 +24,6 @@ class _NowPlayingWidgetState extends State<NowPlayingWidget> with SingleTickerPr
     _controller.dispose();
     super.dispose();
   }
-
   @override
   Widget build(BuildContext context) {
     return Card(
@@ -37,16 +36,16 @@ class _NowPlayingWidgetState extends State<NowPlayingWidget> with SingleTickerPr
           children: [
             FadeTransition(
               opacity: _animation,
-                child: Image.asset('assets/a1.jpg', width: 30, height: 30, fit: BoxFit.cover),
+                child: Image.asset('assets/Frame27.png', width: 30, height: 30, fit: BoxFit.cover),
             ),
             SizedBox(height: 2),
             const Text(
               'Tên bài hát',
-              style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+              style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold,fontFamily: 'Roboto',),
             ),
             const Text(
               'Tên nghệ sĩ',
-              style: TextStyle(fontSize: 18),
+              style: TextStyle(fontSize: 18,fontFamily: 'Roboto'),
             ),
             SizedBox(height: 2),
             Row(
