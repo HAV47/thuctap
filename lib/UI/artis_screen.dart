@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
+import 'package:havv/ui/themes/color_palete.dart';
 
 class ArtistScreen extends StatelessWidget {
   final String coverImage = 'assets/images/Vintage.png';
@@ -10,10 +11,12 @@ class ArtistScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: ColorPalete.white,
       appBar: AppBar(
-        title: Text('Favorite Artist Music'),
-        // backgroundColor: Colors.white,
+        title: Text('Favorite Artist Music',
+          style: TextStyle(
+          fontFamily: 'MyFont',),),
+
       ),
       body: SingleChildScrollView(
         child: Padding(
@@ -65,16 +68,16 @@ class ArtistScreen extends StatelessWidget {
                                 style: TextStyle(
                                   fontSize: 24,
                                   fontWeight: FontWeight.bold,
-                                  color: Colors.white,
-                                  // fontFamily: 'VTIMESB.TTF',
+                                  color: ColorPalete.white,
+                                  fontFamily: 'MyFont',
                                 ),
                               ),
                               Text(
                                 artistName,
                                 style: TextStyle(
                                   fontSize: 18,
-                                  color: Colors.white,
-                                  // fontFamily: 'VTIMESB.TTF',
+                                  color: ColorPalete.white,
+                                  fontFamily: 'MyFont',
                                 ),
                               ),
                             ],
@@ -105,13 +108,13 @@ class ArtistScreen extends StatelessWidget {
                     title: Text(
                       'Bài hát $index',
                       style: TextStyle(
-                        fontFamily: 'Roboto',
+                        fontFamily: 'MyFont',
                       ),
                     ),
                     subtitle: Text(
                       'Nghệ sĩ $index',
                       style: TextStyle(
-                        fontFamily: 'Roboto',
+                        fontFamily: 'MyFont',
                       ),
                     ),
                   );

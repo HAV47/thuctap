@@ -4,6 +4,8 @@ import 'package:flutter/rendering.dart';
 import 'package:havv/UI/album_screen.dart';
 import 'package:havv/ui/all_screen.dart';
 import 'package:havv/ui/artis_screen.dart';
+import 'package:havv/ui/playlist_screen.dart';
+import 'package:havv/ui/themes/color_palete.dart';
 import 'UI/now_playing_screen.dart';
 
 void main() => runApp(MyApp());
@@ -25,8 +27,6 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-
-        // title: Text('Ứng dụng nghe nhạc'),
       ),
       body: Column(
         children: [
@@ -46,7 +46,6 @@ class HomeScreen extends StatelessWidget {
                     ),
                   ),
                 ),
-                SizedBox(width: 0), // Khoảng cách giữa TextField và icon search
                 Icon(Icons.more_vert,size: 35,),
               ],
               ),
@@ -64,12 +63,11 @@ class HomeScreen extends StatelessWidget {
                   labelPadding: const EdgeInsets.symmetric(horizontal: 15),
                   labelStyle: const TextStyle(fontSize: 20),
                   isScrollable: true,
-                  // indicatorColor: Colors.red,
                   indicator: BoxDecoration(
                     border: Border.all(
-                      color: Colors.red,
+                      color: ColorPalete.red,
                     ),
-                    color: Colors.red,
+                    color: ColorPalete.red,
                     borderRadius: BorderRadius.all(Radius.circular(5)),
                   ),
 
@@ -88,12 +86,11 @@ class HomeScreen extends StatelessWidget {
                     children: [
                       AllScreen(),
                       AlbumScreen(),
-                      const Center(
-                        child: Text('Danh sách playlist'),
-                      ),
+                     PlaylistScreen(),
                       ArtistScreen(),
                       Center(
-                        child :Text('Danh sách Explore'),)
+                        child :Text('Danh sách Explore'),
+                      )
                     ],
                   ),
                 ),

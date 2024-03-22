@@ -78,15 +78,17 @@ flutter:
   # example:
   # fonts:
 
-fonts:
-  - asset: fonts/VTTIMESB.TTF
 
-  #         style: italic
-  #   - family: Trajan Pro
-  #     fonts:
-  #       - asset: fonts/TrajanPro.ttf
-  #       - asset: fonts/TrajanPro_Bold.ttf
-  #         weight: 700
-  #
+#fonts:
+#  - family: Time
+#  - assets:
+#  - assets: fonts/time.ttf
+fonts:
+  - assets:
+    - family: MyFont
+      fonts:
+      - assets: assets/fonts/SF-Pro-Display-Bold.otf
+      - assets: assets/fonts/SF-Pro-Display-Regular.otf
+        weight: 700
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
