@@ -25,13 +25,13 @@ class PlaylistScreen extends StatelessWidget {
     );
   }
 
-  Widget _buildPlaylistRow({required IconData icon, required Color color, required String title}) {
+  Widget _buildPlaylistRow(
+      {required IconData icon, required Color color, required String title}) {
     return ListTile(
       leading: Icon(icon, color: color),
       title: Text(title),
       trailing: Icon(Icons.arrow_forward_ios),
-      onTap: () {
-      },
+      onTap: () {},
     );
   }
 }

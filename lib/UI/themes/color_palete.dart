@@ -5,5 +5,4 @@ class ColorPalete {
   static const Color pink = Colors.pink;
   static const Color red = Colors.red;
   static const Color white = Colors.white;
-
 }

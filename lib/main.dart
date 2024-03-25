@@ -1,12 +1,12 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
-import 'package:havv/UI/album_screen.dart';
-import 'package:havv/ui/all_screen.dart';
-import 'package:havv/ui/artis_screen.dart';
-import 'package:havv/ui/playlist_screen.dart';
+import 'package:havv/UI/screen/album_screen.dart';
+import 'package:havv/ui/screen/all_screen.dart';
+import 'package:havv/ui/screen/artis_screen.dart';
+import 'package:havv/ui/screen/playlist_screen.dart';
 import 'package:havv/ui/themes/color_palete.dart';
-import 'UI/now_playing_screen.dart';
+import 'UI/screen/now_playing_screen.dart';
 
 void main() => runApp(MyApp());
 
